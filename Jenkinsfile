@@ -23,5 +23,11 @@ pipeline {
                 '''
             }
         }
+
+        stage('Deploy') {
+            steps {
+                deploy adapters: [tomcat9(credentialsId: '4df8a575-2b0b-4d52-bafb-dccdc77831e4', path: '', url: 'http://localhost:8090/')], contextPath: null, war: 'target/quizApp.war'
+            }
+        }
     }
 }
