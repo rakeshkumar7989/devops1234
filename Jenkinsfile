@@ -23,23 +23,5 @@ pipeline {
                 '''
             }
         }
-
-        stage('Deploy') {
-            steps {
-                echo 'Deploying WAR file to Tomcat...'
-                // Check if the WAR file exists before deploying
-                bat '''
-                if exist target/quizApp.war (
-                    echo WAR file exists, deploying to Tomcat...
-                    curl --user admin:admin ^
-                         --upload-file target/quizApp.war ^
-                         "http://localhost:8090/manager/text/deploy?path=/quizApp&update=true"
-                ) else (
-                    echo WAR file not found, please check the build stage.
-                    exit 1
-                )
-                '''
-            }
-        }
     }
 }
