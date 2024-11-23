@@ -26,7 +26,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                deploy adapters: [tomcat9(credentialsId: '12345', path: '', url: 'http://localhost:8083/')], contextPath: 'project', war: 'target/quizApp.war'
+                deploy adapters: [tomcat9(credentialsId: '12345', path: '', url: 'http://localhost:8083/')], contextPath: 'project43', war: 'target/quizApp.war'
             }
         }
     }
