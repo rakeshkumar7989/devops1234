@@ -17,13 +17,13 @@
             <%
                 // Define questions and options
                 String[] questions = {
-                    "What is the capital of France?",
+                    "What is the capital of India?",
                     "Which programming language is used for Android development?",
                     "What is 5 + 3?"
                 };
 
                 String[][] options = {
-                    {"Berlin", "Paris", "Madrid"},
+                    {"Delhi", "Paris", "Madrid"},
                     {"Java", "Python", "Ruby"},
                     {"5", "8", "10"}
                 };
