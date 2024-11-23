@@ -23,7 +23,7 @@
                 };
 
                 String[][] options = {
-                    {"Delhi", "Paris", "Madrid"},
+                    {"Delhi", "Simla", "Mumbai"},
                     {"Java", "Python", "Ruby"},
                     {"5", "8", "10"}
                 };
