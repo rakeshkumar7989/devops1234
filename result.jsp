@@ -29,7 +29,7 @@
                 {"5", "8", "10"}
             };
 
-            int[] correctAnswers = {2, 1, 2}; // Correct options (1-based index)
+            int[] correctAnswers = {1, 1, 2}; // Correct options (1-based index)
             int score = 0;
 
             // Process user answers
