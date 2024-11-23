@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Cloning the repository using git...'
                 // Use the git step to clone the repository
-                git url: 'https://github.com/Shareef012/devops1234.git'
+                git url: 'https://github.com/rakeshkumar7989/devops1234.git'
             }
         }
 
