@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Cloning the repository using git...'
                 // Use the git step to clone the repository
-                git url: 'https://github.com/SairamPabbisetty/quizApp.git'
+                git url: 'https://github.com/Shareef012/devops1234.git'
             }
         }
 
@@ -26,7 +26,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                deploy adapters: [tomcat9(credentialsId: '4df8a575-2b0b-4d52-bafb-dccdc77831e4', path: '', url: 'http://localhost:8090/')], contextPath: null, war: 'target/quizApp.war'
+                deploy adapters: [tomcat9(credentialsId: '12345', path: '', url: 'http://localhost:8083/')], contextPath: 'project', war: 'target/quizApp.war'
             }
         }
     }
